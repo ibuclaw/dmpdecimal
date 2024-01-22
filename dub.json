@@ -1,0 +1,60 @@
+{
+    "authors": ["Iain Buclaw"],
+    "description": "A library for correctly-rounded arbitrary precision decimal floating point arithmetic.",
+    "license": "Simplified BSD License",
+    "name": "dmpdecimal",
+    "targetType": "sourceLibrary",
+    "dflags-dmd": ["-P-DANSI"],
+    "dflags-x86-dmd": ["-P-DCONFIG_32"],
+    "dflags-x86_64-dmd": ["-P-DCONFIG_64"],
+    "configurations": [
+        {
+            "name": "compare",
+            "targetName": "compare",
+            "sourceFiles": ["examples/compare.d", "*.c"],
+            "targetType": "executable"
+        },
+        {
+            "name": "div",
+            "targetName": "div",
+            "sourceFiles": ["examples/div.d", "*.c"],
+            "targetType": "executable"
+        },
+        {
+            "name": "divmod",
+            "targetName": "divmod",
+            "sourceFiles": ["examples/divmod.d", "*.c"],
+            "targetType": "executable"
+        },
+        {
+            "name": "multiply",
+            "targetName": "multiply",
+            "sourceFiles": ["examples/multiply.d", "*.c"],
+            "targetType": "executable"
+        },
+        {
+            "name": "pow",
+            "targetName": "pow",
+            "sourceFiles": ["examples/pow.d", "*.c"],
+            "targetType": "executable"
+        },
+        {
+            "name": "powmod",
+            "targetName": "powmod",
+            "sourceFiles": ["examples/powmod.d", "*.c"],
+            "targetType": "executable"
+        },
+        {
+            "name": "shift",
+            "targetName": "shift",
+            "sourceFiles": ["examples/shift.d", "*.c"],
+            "targetType": "executable"
+        },
+        {
+            "name": "sqrt",
+            "targetName": "sqrt",
+            "sourceFiles": ["examples/sqrt.d", "*.c"],
+            "targetType": "executable"
+        }
+    ]
+}
