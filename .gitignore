@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dmpdecimal
+dmpdecimal.so
+dmpdecimal.dylib
+dmpdecimal.dll
+dmpdecimal.a
+dmpdecimal.lib
+dmpdecimal-test-*
+*.exe
+*.o
+*.obj
+*.lst
