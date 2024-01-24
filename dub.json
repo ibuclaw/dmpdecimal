@@ -4,7 +4,7 @@
     "license": "Simplified BSD License",
     "name": "dmpdecimal",
     "targetType": "sourceLibrary",
-    "dflags-dmd": ["-P-DANSI"],
+    "dflags-dmd": ["-P-DANSI", "-P-U__SIZEOF_INT128__"],
     "dflags-x86-dmd": ["-P-DCONFIG_32"],
     "dflags-x86_64-dmd": ["-P-DCONFIG_64"],
     "configurations": [
